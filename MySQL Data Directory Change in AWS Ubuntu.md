@@ -120,15 +120,19 @@ Now MySQL data directory has been successfully changed to the new location.
 Then run the below query on MySQL==
 
 mysql> select @@datadir;
+
 +-----------------------+
 | @@datadir             |
 +-----------------------+
 | /mnt/newvolume/mysql/ |
 +-----------------------+
 1 row in set (0.00 sec)
-```
 
-15. To ensure that the changes to the MySQL data directory are persistent after a reboot, add the following line to /etc/fstab:
+
+
+15. To ensure that the changes to the MySQL data directory are persistent after a reboot, 
+
+add the following line to   /etc/fstab:
 
 ```
 /dev/xvdf /mnt/newvolume ext4 defaults,nofail 0 2
