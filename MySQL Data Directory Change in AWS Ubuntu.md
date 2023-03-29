@@ -81,7 +81,7 @@ sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
 datadir=/mnt/newvolume/mysql
 . . .
 ```
-11. Then change the Directory ownership & permission on the new mount volume as below:
+11. Then change the Directory ownership to "mysql" user & permission on the new mount volume as below:
     
       ```
      sudo chown -R mysql:mysql /mnt/newvolume/*
