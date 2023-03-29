@@ -16,9 +16,9 @@
     
     ubuntu@ip-10-0-0-230:~$ sudo lsblk
     
-    NAME     MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+    NAME      MAJ:MIN   RM      SIZE      RO TYPE    MOUNTPOINTS
   
-    **xvdf     202:80   0   100G  0 disk**
+    **xvdf     202:80   0   100G           0               disk**
 
 5. Format the Disk by this command 
 
@@ -41,10 +41,10 @@ sudo mount /dev/xvdf /mnt/newvolume
 
 df -h
 
-Filesystem      Size  Used Avail Use% Mounted on
+Filesystem         Size   Used    Avail   Use%    Mounted on
 
 
-**/dev/xvdf        98G   24K   93G   1% /mnt/newvolume**
+**/dev/xvdf        98G    24K     93G      1%     /mnt/newvolume**
 
 
 9. Stop MySQL Service by 
