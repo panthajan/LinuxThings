@@ -1,14 +1,19 @@
 ===MySQL Data Directory Change in AWS Ubuntu===
 
 1. Create AWS EC2 with Ubuntu OS
-2. Connect to EC by SSH then Install MySQL by command:
+2. Connect to EC2 by SSH then Install MySQL by command:
     
     ```
     sudo apt update
     sudo apt install mysql-server
     ```
     
-    Start MySQL by using the below Command: 
+    Check MySQL Server Status by:
+    
+    ```
+    sudo systemctl status mysql.service
+    ```
+    If Service not start then Start MySQL by using the below Command: 
     
     ```
     sudo systemctl start mysql.service
