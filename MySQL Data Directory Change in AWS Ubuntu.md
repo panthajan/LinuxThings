@@ -1,4 +1,4 @@
-MySQL Data Directory Change in AWS Ubuntu
+===MySQL Data Directory Change in AWS Ubuntu===
 
 1. Create AWS EC2 with Ubuntu OS
 2. Connect to EC by SSH then Install MySQL by command:
@@ -15,16 +15,9 @@ MySQL Data Directory Change in AWS Ubuntu
     sudo lsblk
     
     ubuntu@ip-10-0-0-230:~$ sudo lsblk
+    
     NAME     MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
-    loop0      7:0    0  24.4M  1 loop /snap/amazon-ssm-agent/6312
-    loop1      7:1    0  55.6M  1 loop /snap/core18/2679
-    loop2      7:2    0  63.3M  1 loop /snap/core20/1778
-    loop3      7:3    0 111.9M  1 loop /snap/lxd/24322
-    loop4      7:4    0  49.8M  1 loop /snap/snapd/17950
-    xvda     202:0    0     8G  0 disk
-    +-xvda1  202:1    0   7.9G  0 part /
-    +-xvda14 202:14   0     4M  0 part
-    +-xvda15 202:15   0   106M  0 part /boot/efi
+  
     **xvdf     202:80   0   100G  0 disk**
 
 5. Format the Disk by this command 
